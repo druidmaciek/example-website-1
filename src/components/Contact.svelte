@@ -1,3 +1,31 @@
+<script>
+	import { fade } from 'svelte/transition';
+
+	let firstName = '';
+    let lastName = '';
+	let email = '';
+    let phone = '';
+	let message = '';
+	let showMessage = false;
+	let showError = false;
+
+	function handleClick() {
+		if (firstName && lastName && email && message) {
+			showError  = false;
+            showMessage = true;
+			firstName = '';
+            lastName = '';
+			email = '';
+            phone = '';
+			message = '';
+		} else {
+			showError = true;
+            showMessage = false;
+		}
+	}
+</script>
+
+
 <div id="contact" class="bg-gray-100">
 	<div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
 		<div class="text-center">
@@ -177,6 +205,7 @@
 									type="text"
 									name="first_name"
 									id="first_name"
+                                    bind:value={firstName}
 									autocomplete="given-name"
 									class="py-3 px-4 block w-full border shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
 								/>
@@ -191,6 +220,7 @@
 									type="text"
 									name="last_name"
 									id="last_name"
+                                    bind:value={lastName}
 									autocomplete="family-name"
 									class="py-3 px-4 block w-full border shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
 								/>
@@ -203,6 +233,7 @@
 									id="email"
 									name="email"
 									type="email"
+                                    bind:value={email}
 									autocomplete="email"
 									class="py-3 px-4 block w-full border shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
 								/>
@@ -218,23 +249,14 @@
 									type="text"
 									name="phone"
 									id="phone"
+                                    bind:value={phone}
 									autocomplete="tel"
 									class="py-3 px-4 block w-full border shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
 									aria-describedby="phone-optional"
 								/>
 							</div>
 						</div>
-						<div class="sm:col-span-2">
-							<label for="subject" class="block text-sm font-medium text-gray-900">Subject</label>
-							<div class="mt-1">
-								<input
-									type="text"
-									name="subject"
-									id="subject"
-									class="py-3 px-4 block w-full border shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
-								/>
-							</div>
-						</div>
+						
 						<div class="sm:col-span-2">
 							<div class="flex justify-between">
 								<label for="message" class="block text-sm font-medium text-gray-900">Message</label>
@@ -245,14 +267,22 @@
 									id="message"
 									name="message"
 									rows="4"
+                                    bind:value={message}
 									class="py-3 px-4 block w-full border shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
 									aria-describedby="message-max"
 								/>
 							</div>
 						</div>
-						<div class="sm:col-span-2 sm:flex sm:justify-end">
+						<div class="sm:col-span-2 sm:flex sm:justify-end sm:items-center">
+                            {#if showMessage}
+                            <p class="mr-4 text-indigo-500 font-semibold">Thanks! We recived your message, and someone from our team will try to reply as soon as possible!</p>
+                            {/if}
+                            {#if showError}
+                            <p class="mr-4 text-yellow-500 font-semibold">Please fill all the required fields</p>
+                            {/if}
 							<button
-								type="submit"
+								type="button"
+                                on:click={handleClick}
 								class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:w-auto"
 							>
 								Submit

@@ -1,4 +1,4 @@
-<div class="mt-24 bg-white">
+<div class="my-24 bg-white">
 	<p class="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
 		Some of our trusted customers
 	</p>

@@ -4,7 +4,7 @@
 </script>
 
 <div class="pt-6 ">
-    <div class="flow-root h-56 bg-gray-50 rounded-lg px-6 pb-8">
+    <div class="flow-root h-56 bg-gray-100 rounded-lg px-6 pb-8">
       <div class="-mt-6">
         <div>
           <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">

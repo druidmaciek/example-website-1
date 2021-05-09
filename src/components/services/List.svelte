@@ -4,7 +4,7 @@
   export let showAll = false;
 
 </script>
-<div class="bg-white py-16 sm:py-24 lg:py-24">
+<div class="bg-gray-50 py-16 sm:py-24 lg:py-24">
     <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
       <h2 class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
         What we offer
@@ -78,7 +78,7 @@
         <div class="mt-12 flex justify-center">
           <a
             href="/services"
-            class=" flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gray-700 bg-gray-100 hover:bg-gray-200 md:py-4 md:text-lg md:px-10"
+            class=" flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gray-700 bg-gray-200 hover:bg-gray-300 md:py-4 md:text-lg md:px-10"
           >
             See All Services
           </a>
