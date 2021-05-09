@@ -8,6 +8,10 @@
     import Cta from "../components/CTA.svelte";
 </script>
 
+<svelte:head>
+	<title>Insight Accountants</title>
+</svelte:head>
+
 <Header />
 <Logos />
 <Services />
