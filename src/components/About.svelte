@@ -24,7 +24,7 @@
 			<div class="space-y-5 sm:space-y-4">
 				<h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">About Us</h2>
 				<p class="text-xl text-gray-500">
-					Based in Cardif, we’re focused on providing modern solutions to accounting and
+					Based in Cardiff, we’re focused on providing modern solutions to accounting and
 					bookkeeping. The way businesses operate is changing with your finance data available
 					when you want it and where you want it. 
 				</p>
