@@ -18,7 +18,7 @@
 <Testimonial
 	name={'Louis Peters'}
     city={'Newport'}
-	image={'https://images.unsplash.com/photo-1559548331-f9cb98001426?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80'}
+	image={'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80'}
 >Fantastic company. Very responsive and helpful, even at a weekend and at end of tax year. Would highly recommend them for all your tax requirements</Testimonial>
 <Contact />
 <Testimonial
