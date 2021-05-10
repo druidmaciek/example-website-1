@@ -33,7 +33,7 @@
 				Contact us
 			</h2>
 			<p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-				We will respond to your query within 24 hours. Thank Yout
+				We will respond to your query within 24 hours. Thank You
 			</p>
 		</div>
 
